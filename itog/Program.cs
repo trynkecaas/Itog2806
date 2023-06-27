@@ -4,7 +4,7 @@ int m = Convert.ToInt32(Console.ReadLine);
 string [] stringArray = new string [m];
 void array (string[] stringArray)
 {
-  for (int i = 0; i<stringArrayLength;i++)
+  for (int i = 0; i<stringArray.Length;i++)
   {
     Console.WriteLine($"Введите {i+1} элемент массива");
     stringArray[i] =Console.ReadLine();  
@@ -19,3 +19,14 @@ string [] symbol(string [] stringArray)
     n++;
       }
 } 
+void printA(string [] stringArray)
+{
+  Console.Write("[");
+  for (int i=0; i<stringArray.Length;i++)
+  {
+    Console.WriteLine($"{stringArray[i]}', ");
+  }
+  Console.Write("]");
+}
+array(stringArray);
+printA(symbol(stringArray));
