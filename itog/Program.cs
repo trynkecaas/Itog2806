@@ -17,8 +17,18 @@ string [] symbol(string [] stringArray)
   {
     if(stringArray[i].Length<=3)
     n++;
-      }
+   }
 } 
+string [] rez = new string [n];
+int j = 0;
+for ( int i=0; i< stringArray.Length; i++)
+{
+  if ( stringArray[i].Length;i++)
+  { 
+    rez[j]= stringArray[i];
+    j++;
+  }
+}
 void printA(string [] stringArray)
 {
   Console.Write("[");
